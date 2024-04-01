@@ -1,0 +1,55 @@
+.navbar{    
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+.main-content {
+    position: relative;
+    min-height: calc(100vh - 56px); /* Adjust the height based on your footer's height */
+    padding-bottom: 56px; /* Adjust this value to match the height of your footer */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+.nav{
+    width: 40%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 768px) {
+    .nav {
+      width: 100%;
+      display: flex;
+      margin:0;
+      flex-direction: column;}
+    
+  }
+  @media screen and (max-width: 1024px)
+  {
+    .nav {
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+  }
+  .nav li {
+    list-style-type: none;
+    text-align: center;
+  }
+  .nav li a {
+    text-decoration: none;
+    color: #e9ecef;
+    font-size: larger; 
+  }
+
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    cursor: pointer;
+  }
+  
+  .weather-details {
+    display: none;
+  }
+  
